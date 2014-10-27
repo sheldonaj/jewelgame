@@ -1,0 +1,96 @@
+﻿#game {
+	width : 100%;
+	height: 100%;
+}
+
+@media (max-width: 480px){
+	#game {
+		font-size: 32px;
+	}
+	.jewel-size {
+		font-size: 32px;
+	}
+}
+
+@media (min-width: 768px){
+	#game {
+		font-size: 64px;
+	}
+	#game-screen .game-board {
+		margin: 0.75em;
+	}
+	.jewel-size {
+		font-size: 80px;
+	}
+}
+
+@media (orientation: landscape){
+	#splash-screen,
+	#main-menu {
+		font-size : 1.0em;
+		padding-top: 0.75em;
+	}
+	ul.menu li {
+		display: inline-block;
+		margin: 0;
+	}
+	ul.menu li button {
+		margin: 0.5em;
+		font-size: 0.5em;
+	}
+	.jewel-size {
+		font-size: 32px;
+	}
+
+	#game-screen .game-board {
+		float: left;
+	}
+
+	#game-screen .game-info {
+		width: auto;
+		height: 2em;
+		white-space: nowrap;
+	}
+
+	#game-screen .game-info label {
+		font-size: 0.5em;
+	}
+
+	#game-screen .game-info .score {
+		float: left;
+		clear: both;
+	}
+
+    #game-screen .time {
+        width: 6em;
+        transform: rotate(-90deg) translate(-5.5em, -1.75em);
+    }
+
+    #game-screen .time .indicator {
+        width: 6em;
+    }
+}
+
+/*small screens landscape*/
+@media (orientation: landscape) and (max-width: 480px) {
+	ul.menu li button {
+		font-size: 0.4em;
+		.jewel-size {
+			font-size: 24px;
+		}
+	}
+}
+
+/* tablets landscape */
+@media (orientation: landscape) and (min-width: 768px) {
+	#splash-screen,
+	#main-menu {
+		padding-top: 1.5em;
+	}
+	#game-screen .game-board {
+		margin: 0.25em;
+	}
+	.jewel-size {
+		font-size: 64px;
+	}
+}

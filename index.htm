@@ -1,0 +1,52 @@
+﻿<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no"/>
+	<title>Jewel Warrior</title>
+
+	<link rel="stylesheet" href="styles/main.css" />
+	<link rel="stylesheet" href="styles/fontfaces.css" />
+	<link rel="stylesheet"
+		href="styles/mobile.css"
+		media="screen and (max-width: 1024px)
+				and (orientation: landscape)"/>
+	<link rel="stylesheet"
+		href="styles/mobile.css"
+		media="screen and (max-width: 768px)
+				and (orientation: portrait)"/>
+	<script src="scripts/modernizr.js"></script>
+	<script src="scripts/loader.js"></script>
+</head>
+<body>
+	<div id="game">
+		<div class="background"></div>
+		<div class="screen" id="splash-screen">
+			<h1 class="logo">Jewel <br/>Warrior</h1>
+			<progress class="loader" value="0" max="100"></progress>
+			<span class="continue">Click to continue</span>
+		</div>
+		<div class="screen" id="main-menu">
+			<h2 class="logo">Jewel <br/>Warrior</h2>
+			<ul class="menu">
+				<li><button name="game-screen">Play</button>
+				<li><button name="hiscore">Highscore</button>
+				<li><button name="about">About</button>
+				<li><button name="exit-screen">Exit</button>
+			</ul>
+		</div>
+		<div class="screen" id="game-screen">
+			<div class="game-board jewel-size">
+                <div class="announcement"></div>
+            </div>
+			<div class="game-info">
+				<label class="level">Level: <output></output></label>
+				<label class="score">Score: <output></output></label>
+			</div>
+            <div class="time"><progress class="indicator" value="100" max="100"></progress></div>
+		</div>
+		<div class="screen" id="high-scores"></div>
+		<div id="jewel-proto" class="jewel-size"></div>
+	</div>
+</body>
+</html>
