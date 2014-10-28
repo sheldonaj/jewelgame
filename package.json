@@ -1,0 +1,28 @@
+{
+    "name": "jewelgame",
+    "version": "1.0.0",
+    "description": "jewel game tutorial",
+    "repository": "https://github.com/sheldonaj/jewelgame",
+    "devDependencies": {
+        "http-server": "^0.6.1"
+    },
+    "scripts": {
+        "prestart": "npm install",
+        "start": "http-server -p 8081",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sheldonaj/jewelgame.git"
+  },
+  "keywords": [
+    "jewel",
+    "game"
+  ],
+  "author": "sheldonaj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sheldonaj/jewelgame/issues"
+  },
+  "homepage": "https://github.com/sheldonaj/jewelgame"
+}
